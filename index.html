@@ -7,62 +7,117 @@
   <title>The HTML5 Herald</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
   <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
 
+  <style>
+        
+        .split {
+          height: 100%;
+          width: 50%;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          overflow-x: hidden;
+          padding-top: 20px;
+        }
+        
+        .left {
+          left: 0;
+          background-color: #111;
+        }
+        
+        .right {
+          right: 0;
+          background-color: rgb(21, 0, 71);
+        }
+        
+        .centered {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          color: white;
+        }
+
+        .centeredright {
+          position: absolute;
+          top: 65%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: left;
+          color: white;
+
+        }
+        .centered img {
+          width: 300px;
+          border-radius: 50%;
+        }
+        </style>
+
 </head>
 <body>
-    <header>
-        <h1>Computers and New Media</h1>
-        <h2>Alizain Ali</h2>
-        <img  src = me.jpg width = 300 height = 400>
-    </header>
-    <h2>Why I Joined</h2>
-    <p>
-        I have join this class to understand the different ways Computers and New Media have shaped the world.
-    </p>
-    <h2>Media I Use Every Week</h2>
+<div class="split left">
+        <div class="centered">
+                <header>
+                        <h1>Computers and New Media</h1>
+                        <h2>Alizain Ali</h2>
+                        <img  src = me.jpg width = 300 height = 400>
+                    </header>
+                    <h2>Why I Joined</h2>
+                    <p>
+                        I have joined this class to understand the different ways Computers and New Media have shaped the world.
+                    </p>
+        </div>
+        </div>
+    <div class="split right">
+    <div class="centeredright">
+            <h2>Media I Use Every Week</h2>
 
-    <ul>
-        <h3>
-            <li>Television</li>
             <ul>
-                <li>ESPN</li>
+                <h3>
+                    <li>Television</li>
                     <ul>
-                        <li>SportsCenter</li>
-                        <li>First Take</li>
+                        <li>ESPN</li>
+                            <ul>
+                                <li>SportsCenter</li>
+                                <li>First Take</li>
+                            </ul>
+                        <li>HBO</li>
+                            <ul>
+                                <li>Game of Thrones</li>
+                                <li>Silicon Valley</li>
+                            </ul>
                     </ul>
-                <li>HBO</li>
+                    <li style = "font-weight: 400;">Internet</li>
                     <ul>
-                        <li>GOT</li>
-                        <li>Silicon Valley</li>
+                        <li>Twitter</li>
+                        <li>Snapchat</li>
+                        <li>Facebook</li>
+                        <li>Youtube</li>
+                            <ul>
+                                <li>Derek Banas</li>
+                                <li>Vsauce</li>
+                            </ul>
+                        <li>Twitch</li>
+                            <ul>
+                                <li>Call of Duty</li>
+                                <li>League of Legends</li>
+                            </ul>
+                        <li>Netflix</li>
+                            <ul>
+                                <li>Lucifer</li>
+                                <li>Prison Break</li>
+                                <li>Breaking Bad</li>
+                                <li>Lost</li>
+                            </ul>
                     </ul>
-            </ul>
-            <li>Internet</li>
-            <ul>
-                <li>Twitter</li>
-                <li>Snapchat</li>
-                <li>Facebook</li>
-                <li>Youtube</li>
-                    <ul>
-                        <li>Derek Banas</li>
-                        <li>Vsauce</li>
-                    </ul>
-                <li>Twitch</li>
-                    <ul>
-                        <li>COD</li>
-                        <li>LOL</li>
-                    </ul>
-                <li>Netflix</li>
-                    <ul>
-                        <li>Lucifer</li>
-                        <li>Prison Break</li>
-                        <li>Breaking Bad</li>
-                        <li>Lost</li>
-                    </ul>
-            </ul>
-        </h3>
-    </ul>  
-     <h2> Links to Other Writings/Work </h2>
+                </h3>
+            </ul>  
+                <h2> Links to Other Works </h2>
+    </div>
+    </div> 
 </body>
 </html>
