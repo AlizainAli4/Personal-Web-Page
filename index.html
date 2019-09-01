@@ -12,7 +12,6 @@
   <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
 
   <style>
-        
         .split {
           height: 100%;
           width: 50%;
@@ -34,10 +33,6 @@
         }
         
         .centered {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
           text-align: center;
           color: white;
         }
@@ -55,69 +50,103 @@
           width: 300px;
           border-radius: 50%;
         }
+        #content, html, body {
+    height: 100%;
+}
+#left {
+    float: left;
+    width: 33.3%;
+    background: #111;
+    height: 100%;
+    overflow: auto;
+    color: white;
+    text-align: center
+}
+#right {
+    float: left;
+    width: 33.3%;
+    background: rgb(61, 2, 20);
+    height: 100%;
+    overflow: auto;
+    color: white;
+    text-align: center
+}
+#middle {
+    float: left;
+    width: 33.3%;
+    background: rgb(21, 0, 71);
+    height: 100%;
+    overflow: auto;
+    color: white;
+    text-align: left
+}
         </style>
 
 </head>
 <body>
-<div class="split left">
-        <div class="centered">
-                <header>
-                        <h1>Computers and New Media</h1>
-                        <h2>Alizain Ali</h2>
-                        <img  src = me.jpg width = 300 height = 400>
-                    </header>
-                    <h2>Why I Joined</h2>
-                    <p>
-                        I have joined this class to understand the different ways Computers and New Media have shaped the world.
-                    </p>
-        </div>
-        </div>
-    <div class="split right">
-    <div class="centeredright">
-            <h2>Media I Use Every Week</h2>
+          <div id="content">
+                <div id="left" class = "centered">
+                        <header>
+                                <h1>Computers and New Media</h1>
+                                <h2>Alizain Ali</h2>
+                                <img  src = me.jpg width = 300 height = 400>
+                            </header>
+                            <h2>Why I Joined</h2>
+                            <p>
+                                I have joined this class to understand the different ways Computers and New Media have shaped the world. 
+                                Also, I hope to learn how Computers and New Media are used in our daily lives, what the benefits are, and 
+                                how a computer scientist can utilize these benefits to gather more data.
 
-            <ul>
-                <h3>
-                    <li>Television</li>
-                    <ul>
-                        <li>ESPN</li>
-                            <ul>
-                                <li>SportsCenter</li>
-                                <li>First Take</li>
-                            </ul>
-                        <li>HBO</li>
-                            <ul>
-                                <li>Game of Thrones</li>
-                                <li>Silicon Valley</li>
-                            </ul>
-                    </ul>
-                    <li style = "font-weight: 400;">Internet</li>
-                    <ul>
-                        <li>Twitter</li>
-                        <li>Snapchat</li>
-                        <li>Facebook</li>
-                        <li>Youtube</li>
-                            <ul>
-                                <li>Derek Banas</li>
-                                <li>Vsauce</li>
-                            </ul>
-                        <li>Twitch</li>
-                            <ul>
-                                <li>Call of Duty</li>
-                                <li>League of Legends</li>
-                            </ul>
-                        <li>Netflix</li>
-                            <ul>
-                                <li>Lucifer</li>
-                                <li>Prison Break</li>
-                                <li>Breaking Bad</li>
-                                <li>Lost</li>
-                            </ul>
-                    </ul>
-                </h3>
-            </ul>  
-                <h2> Links to Other Works </h2>
-    </div>
-    </div> 
+                            </p>
+                </div>
+                <div id="middle">
+                        <h2 style = "text-align: center">Media I Use Every Week</h2>
+
+                        <ul>
+                            <h3>
+                                <li>Television</li>
+                                <ul>
+                                    <li>ESPN</li>
+                                        <ul>
+                                            <li>SportsCenter</li>
+                                            <li>First Take</li>
+                                        </ul>
+                                    <li>HBO</li>
+                                        <ul>
+                                            <li>Game of Thrones</li>
+                                            <li>Silicon Valley</li>
+                                        </ul>
+                                </ul>
+                                <li style = "font-weight: 400;">Internet</li>
+                                <ul>
+                                    <li>Twitter</li>
+                                    <li>Snapchat</li>
+                                    <li>Facebook</li>
+                                    <li>Youtube</li>
+                                        <ul>
+                                            <li>Derek Banas</li>
+                                            <li>Vsauce</li>
+                                        </ul>
+                                    <li>Twitch</li>
+                                        <ul>
+                                            <li>Call of Duty</li>
+                                            <li>League of Legends</li>
+                                        </ul>
+                                    <li>Netflix</li>
+                                        <ul>
+                                            <li>Lucifer</li>
+                                            <li>Prison Break</li>
+                                            <li>Breaking Bad</li>
+                                            <li>Lost</li>
+                                        </ul>
+                                </ul>
+                            </h3>
+                        </ul> 
+                    
+                </div>
+                <div id = "right"> 
+                        <h2> Links to Other Works </h2>
+                </div> 
+              </div>
 </body>
 </html>
